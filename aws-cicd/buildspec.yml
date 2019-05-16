@@ -15,4 +15,4 @@ phases:
    - mv aws-cicd/target/deploy ./
 artifacts:
  files:
-  - aws-cicd/deploy/**/*
+  - /deploy/**/*
