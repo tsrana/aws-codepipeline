@@ -11,8 +11,7 @@ phases:
    - mvn clean prepare-package war:exploded
  post_build:
   commands:
-   - echo "Inside post_build"		
-   - mv aws-cicd/target/deploy ./
+   - echo "Inside post_build"
 artifacts:
  files:
   - /deploy/**/*
