@@ -11,8 +11,8 @@ phases:
    - mvn clean prepare-package war:exploded
  post_build:
   commands:
-   - echo "Inside post_build"
-   - cd .
+   - echo "Inside post_build"		
+   - mv target/aws-cicd-0.0.1-SNAPSHOT ./
 artifacts:
  files:
-  - target/aws-cicd-0.0.1-SNAPSHOT/*
+  - /aws-cicd-0.0.1-SNAPSHOT/**/*
