@@ -12,6 +12,7 @@ phases:
  post_build:
   commands:
    - echo "Inside post_build"
+   - cd .
 artifacts:
  files:
   - target/aws-cicd-0.0.1-SNAPSHOT/*
