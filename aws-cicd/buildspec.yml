@@ -11,7 +11,8 @@ phases:
    - mvn clean prepare-package war:exploded
  post_build:
   commands:
-   - echo "Inside post_build"
+   - echo "Inside post_build"		
+   - mv target/deploy ./
 artifacts:
  files:
   - /deploy/**/*
