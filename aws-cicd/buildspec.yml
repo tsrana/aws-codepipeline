@@ -8,10 +8,11 @@ phases:
   commands:
    - echo "Inside Build"
    - cd aws-cicd
-   - mvn clean package
+   - mvn package
  post_build:
   commands:
-   - echo "Inside post_build"	
+   - echo "Inside post_build"
+   - mv target/aws-cicd-0.0.1-SNAPSHOT.war aws-cicd-0.0.1-SNAPSHOT.war	
 artifacts:
  files:
-  - aws-cicd/target/aws-cicd-0.0.1-SNAPSHOT.war
+  - aws-cicd-0.0.1-SNAPSHOT.war
