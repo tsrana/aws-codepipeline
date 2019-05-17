@@ -13,7 +13,7 @@ phases:
   commands:
    - echo "Inside post_build"
    - cd ..
-   - mv aws-cicd/target/aws-cicd-0.0.1-SNAPSHOT/* aws-cicd-0.0.1-SNAPSHOT	
+   - mv aws-cicd/target/aws-cicd-0.0.1-SNAPSHOT/* aws-cicd-0.0.1-SNAPSHOT/*	
 artifacts:
  files:
   - aws-cicd-0.0.1-SNAPSHOT/*
