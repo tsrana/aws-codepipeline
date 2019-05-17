@@ -14,4 +14,4 @@ phases:
    - echo "Inside post_build"	
 artifacts:
  files:
-  - target/aws-cicd-0.0.1-SNAPSHOT.war
+  - aws/cicd/target/aws-cicd-0.0.1-SNAPSHOT.war
